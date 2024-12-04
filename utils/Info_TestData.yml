@@ -1,0 +1,562 @@
+Nodata:
+  NoData_AvailableMsg: No data available
+
+Title:
+  Login: "Login - iMetanic"
+  Signup: "Signup - iMetanic"
+  Home: "Home - iMetanic"
+  Dashboard: "Dashboard - iMetanic"
+  Orders: "Orders - iMetanic"
+  OrdersDetails: "Order Details - Orders - iMetanic"
+  ShoppingCart: "Shopping Cart - iMetanic"
+  Ledger: "Ledgers - iMetanic"
+  LedgerDetails: " Outstanding Balance Details of Customer - Ledgers - iMetanic"
+  Branches: "Branches - Settings - iMetanic"
+  Users: "Users - Settings - iMetanic"
+  Categories: "Categories - Settings - iMetanic"
+  Products: "Products - Settings - iMetanic"
+  Customers: "Customers - Settings - iMetanic"
+
+Toast_Messages:
+  loggedIn_Failed_Msg: Logged in failed
+  loggedIn_Success_Msg: Logged in successfully
+  Invalid_Password_Msg: Password format is 8 characters long 1 uppercase & 1 lowercase character 1 number
+  FailedMsg_Fill_AllFields: Please fill in all the fields.
+  Invalid_PhoneNo_Msg: Your phone number is incomplete
+  Exist_Username_Msg: Username already exists.
+  Signup_SuccessMsg: Account created successfully
+  WithoutSelect_productMsg: Please select atleast one product
+  ProductAdded_SuccessMsg: Product added successfully
+  CustomerAdded_SuccessMsg: Customer added successfully
+  ExistPhoneNo_ErrMsg: Phone number already exists.
+  SendEmail_Waiting_ResponseMsg: Waiting...
+  SendEmail_SuccessMsg: Mail sent successfully
+  SendMsg_SuccessMsg: Message sent successfully
+  OrderTaken_Msg: The order has been taken successfully
+  WithoutFill_FailedMsg: Please fill in all required fields.
+  ProductUpdated_SuccessMsg: Product updated successfully
+  CategoryAdded_SuccessMsg: Category added successfully
+  CategoryAdded_FailedMsg: Category name already exist
+  CategoryUpdated_SuccessMsg: Category updated successfully
+  FailedMsg_WithoutFill: Please fill in required fields.
+  BranchCreated_SuccessMsg: Branch created successfully
+  BranchUpdated_SuccessMsg: Branch updated successfully
+  UserCreated_SuccessMsg: User created successfully
+  UserUpdated_SuccessMsg: User updated successfully
+  Exist_BusinessName_Msg: Organization name already exists
+  Exist_Email_Msg: Email already exists
+  SetPassword_SuccessMsg: Password created successfully
+  ProductSaved_SuccessMsg: Product saved successfully
+  SpecialCharNotAllow_ErrMsg: Special characters are not allowed in name.
+
+  API_Response_ErrMsg:
+    Reg_SuccessMsg: You have successfully registered
+    UserName_Exist: Username Already Exists
+    BusinessName_Exist: Organization name Already Exists
+    EmailID_Exist: Email Already Exists
+
+Login:
+  GetsStarted_lblTxt: "Get’s Started"
+  Username_LblTxt: Username
+  Password_LblTxt: Password
+  Login_Btn: Login
+  username: automationtest
+  password: "&lackMan123!"
+  invalid_username: Auto
+  invalid_password: Test123
+
+Signup:
+  GetsStarted_lblTxt: "Get’s Started"
+  Username_lblTxt: Username
+  Name_lblTxt: Name
+  BusinessName_lblTxt: Organization name
+  DateOfBirth_lblTxt: Date of Birth (dd-mm-yyyy)
+  PhoneNo_LblTxt: Phone Number
+  Address_lblTxt: Address (e.g., Door number, Street name, Village/City name)
+  Password_lblTxt: Password
+  Signup_Btn: Signup
+  Email_LblTxt: Email
+  State_LblTxt: State
+  Country_LblTxt: Country
+  PinCode_LblTXt: Postal code
+
+  Exist_Username: Regression
+  Username: AutomationTest
+  Name: Tester
+  Exist_BusinessName: iMetanic
+  Business_Name: iMetanic Pvt Ltd
+  DateOf_Birth: 16-12-1999
+  Invalid_PhoneNo: "98765"
+  Phone_Number: "98765432"
+  Address: Tiruchirappalli
+  Invalid_Password: Test123
+  Password: Tester123
+  Exist_Email: Vimalmuruges@imetanic.co
+  Email: Vimal@gmail.co
+  State: Tamil Nadu
+  Country: India
+  PinCode: 621109
+  BusinessTypes:
+    LblTxt: Business Type
+    Laundry_Option: Laundry
+    CarWash_Option: Car wash
+
+SetPassword:
+  HeaderTxt: Create Your Password
+  Create_Password_LblTxt: Create Password *
+  Confirm_Password_LblTxt: Confirm Password *
+  Confirm_Btn: Set Password
+
+Home:
+  HomeIcon_LblTxt:  Home
+  DashBoardIcon_LblTxt: Dashboard
+  OrdersIcon_LblTxt: Orders
+  LedgerIcon_LblTxt: Ledger
+  SettingsIcon_LblTxt: Settings
+  Category_Section:
+    CategorySection_HeaderTxt: Category
+
+  Order_Summary:
+    OrderSection_HeaderTxt: Order summary
+    SubTotal_lblTxt: Sub total
+    SubTotal_Value: 0 QAR
+    TotalQuantity_lblTxt: Total quantity
+    TotalQuantity_Value: 0 Nos
+    Discount_lblTxt: Discount
+    Discount_Value: 0 QAR
+    Total_lblTxt: Total (Incl Discount)
+    Total_Value: 0 QAR
+    NewOrder_Btn: NEW ORDER
+    Checkout_Btn: CHECKOUT
+
+  SelectCustomer_Popup:
+    Header_Txt: Select customer
+    AddProduct_Btn: ADD PRODUCT
+    AddCustomer_Btn: ADD CUSTOMER
+    SearchTxtBox_LblTxt: Search by Name or Phone number
+    Note_LblTx: "Note:Go to the settings page if you need to modify any customer information."
+
+    AddCustomer_Popup:
+      Header_LblTxt: Enter customer details
+      Name_lblTxt: Name *
+      PhoneNo_lblTxt: Phone number *
+      Email_lblTxt: Email ID (Optional)
+      Address:
+        Address_lblTxt: "Address (Optional):"
+        Street_Village_LblTxt: Street/Village
+        District_State_LblTxt: District/State
+        Pincode_Zipcode_LblTxt: Pincode/Zipcode
+        Street_Village_InputValue: West St.,EasternCart,
+        District_State_InputValue: South Dt.,North State,
+        Pincode_Zipcode_InputValue: 612231
+      Cancel_Btn: CANCEL
+      AddCustomer_Btn: ADD CUSTOMER
+      Name: QA
+      PhoneNo: "99887766"
+      Email: abc@gmail.com
+
+    CustomerLedger_Popup:
+      Header_LblTxt: Customer ledger
+      Name_LblTxt: Name
+      RemainingBalance_LblTxt: Outstanding balance
+      Cancel_Btn: CANCEL
+      Confirm_Btn: CONFIRM
+
+    Product_Details:
+      HeaderTxt: Product details
+      CustomerName_lblTxt: "Customer name :"
+      PhoneNumber_lblTxt: "Phone number :"
+      TotalAmount_lblTxt: "Total price :"
+      OrderConfirm_Btn: ORDER CONFIRM
+      Table:
+        SNo_ColumnTxt: S.No
+        Products_ColumnTxt: Products
+        Quantity_ColumnTxt: Quantity
+        Amount_ColumnTxt: Price (QAR)
+
+    Choose_PaymentMethod:
+      HeaderTxt: Choose the payment method
+      BuyOnCredit_LblTxt: Buy on credit
+      CreditCard_LblTxt: Credit card
+      Cash_LblTxt: Cash
+
+      PaymentSummary:
+        HeaderTxt: Payment summary
+        Add_Product_Btn: ADD PRODUCT
+        SelectedCustomer_lblTxt: Selected customer
+        PaymentMethod_lblTxt: Payment method
+        CustomerName_lblTxt: Customer name
+        OrderDate_lblTxt: Order date
+        OrderTime_lblTxt: Order time
+        OutstandingBalance_LblTxt: "Outstanding balance:"
+        OrderAmount_LblTxt: "Order price:"
+        Discount_lblTxt: "Discount:"
+        FinalAmount_lblTxt: "Final price (Incl Discount):"
+        BuyOnCredit_FinalAmount_lblTxt: "Final price:"
+        Total_lblTxt: "Total (Incl Outstanding):"
+        ReceivedAmount_lblTxt: Received price
+        RemainingAmount_lblTxt: Remaining price
+#        DeliveryDate_lblTxt: Delivery date
+        Cancel_Btn: CANCEL
+        Complete_Btn: COMPLETE
+        AmountType: QAR
+        BuyOnCredit_OfPayment_LblTxt: Buy on credit
+        Cash_OfPayment_LblTxt: Cash
+
+      PaymentSuccess_Popup:
+        SuccessMsg_lblTxt: Your payment has been completed successfully
+        PrintReceipt_BtnTxt: PRINT RECEIPT
+        SendMail_Btn: SEND MAIL
+        SendMsg_Btn: SEND MESSAGE
+        Done_Btn: DONE
+
+Orders:
+  HeaderTxt: Orders
+  SNo_ColumnHeaderTxt: S.No
+  Name_ColumnHeaderTxt: Name
+  PhoneNo_ColumnHeaderTxt: Phone number
+  DeliveryDate_ColumnHeaderTxt: Delivery date
+  OrderID_ColumnHeaderTxt: Order ID
+  OrderStatus_ColumnHeaderTxt: Order status
+  Actions_ColumnHeaderTxt: Actions
+  Confirm_OrderStatusValue: CONFIRM
+  Cancel_OrderStatusValue: CANCEL
+  Waiting_OrderStatusValue: Waiting for delivery
+  ExportBtn: EXPORT
+  ImportBtn: IMPORT
+  SearchedOrder_PhNo: "98765432"
+
+  ChooseAnOption:
+    LblTxt: "Choose an option:"
+    Today_Opt: Today
+    Yesterday_Opt: Yesterday
+    LastWeek_Opt: Last 7 days
+    LastMonth_Opt: Last 30 days
+    Last_180days_Opt: Last 180 days
+    CustomizeDate_Opt: Customize date
+    FromTo_LblTxt: "From:"
+    ToDate_LblTxt: "To:"
+
+  ChooseExportFile:
+    LblTxt: "Choose export file:"
+    CSV_Opt: CSV
+    PDF_Opt: PDF
+
+  ViewOrders:
+    Table:
+      SNo_ColumnHeaderTxt: S.No
+      ProductName_ColumnHeaderTxt: Product name
+      Amount_ColumnHeaderTxt: Price(QAR)
+      TotalQuantity_ColumnHeaderTxt: Total quantity
+      Total_ColumnHeaderTxt: Total(QAR)
+
+    OrderDetails_Section:
+      OrderID_LblTxt: ORDER ID
+      Name_LblTxt: Name
+      SubTotal_LblTxt: Sub total
+      Discount_LblTxt: Discount
+      ReceivedAmount_LblTxt: Received price
+      RemainingBalance_LblTxt: Remaining balance
+      OutstandingBalance_LblTxt: Outstanding balance
+      PaymentMode_LblTxt: Payment mode
+      OrderDate_LblTxt: Order date
+      OrderTime_LblTxt: Order time
+      OrderStatus_LblTxt: Order status
+      PrintReceipt_Btn: PRINT RECEIPT
+      Cancel_Btn: CANCEL
+
+    OrderStatus_Dropdown_Options:
+      Confirm_LblTxt: Confirm
+      InProcess_LblTxt: In-process
+      WaitingForDelivery_LblTxt: Waiting for delivery
+      Delivered_LblTxt: Delivered
+      Canceled_LblTxt: Canceled
+
+    PaymentMethods:
+      LblTxt: Payment methods
+      BuyOnCredit_RadioBtn_LblTxt: Buy on credit
+      Card_RadioBtn_LblTxt: Card
+      Cash_RadioBtn_LblTxt: Cash
+      Complete_Btn: COMPLETE
+
+      PaymentSummary:
+        HeaderTxt: Payment summary
+        Add_Product_Btn: ADD PRODUCT
+        SelectedCustomer_lblTxt: Selected customer
+        PaymentMethod_lblTxt: Payment method
+        CustomerName_lblTxt: Customer name
+        OrderDate_lblTxt: Order date
+        OrderTime_lblTxt: Order time
+        OutstandingBalance_LblTxt: "Outstanding balance:"
+        OrderPrice_LblTxt: "Order price:"
+        Discount_lblTxt: "Discount :"
+        FinalPrice_lblTxt: "Final price (Incl Discount) :"
+        Total_lblTxt: "Total (Incl Outstanding):"
+        ReceivedPrice_lblTxt: Received price
+        RemainingPrice_lblTxt: Remaining price
+        Cancel_Btn: CANCEL
+        Complete_Btn: COMPLETE
+        AmountType: QAR
+        BuyOnCredit_OfPayment_LblTxt: Buy on credit
+        Cash_OfPayment_LblTxt: Cash
+
+      PaymentSuccess_Popup:
+        SuccessMsg_lblTxt: Your payment has been completed successfully
+        PrintReceipt_BtnTxt: PRINT RECEIPT
+        SendMail_Btn: SEND MAIL
+        SendMsg_Btn: SEND MESSAGE
+        Done_Btn: DONE
+
+ShoppingCart:
+  Table:
+    Sno_ColumnTxt: S.No
+    CartID_ColumnTxt: Cart ID
+    CustomerName_ColumnTxt: Customer name
+    TotalQty_ColumnTxt: Product total quantity
+    TotalAmt_ColumnTxt: Total price (QAR)
+    Actions_ColumnTxt: Actions
+
+  MakeToOrder_CartDetails:
+    Actions_ColTxt: Actions
+    ProductName_ColTxt: Product name
+    Amount_ColTxt: Price (QAR)
+    OrderQTY_ColTxt: Order quantity
+    Total_ColTxt: Total (QAR)
+    
+    CartDetails:
+      CartID: "CART ID:"
+
+      PriceDetails:
+        HeaderTxt: Price details
+        Price_LblTxt: Price
+        Discount_LblTxt: Discount
+        DeliveryCharges_LblTxt: Delivery charges
+        TotalPrice_LblTxt: Total price
+        Items_LblTxt: items(s)
+
+      CustomerDetails:
+        HeaderTxt: Customer detail
+        SelectCustomer_LblTxt: "Select customer :"
+        SelectCustomer_Btn: SELECT CUSTOMER
+
+        SelectCustomer_Popup:
+          HeaderTxt:
+          AddCustomer_Btn: Add customer
+          Search_TxtBox_Placeholder: Search phone number
+          Name_Column_LblTxt: Name
+          PhoneNo_Column_LblTxt: Phone number
+
+        Selected_Customer:
+          Name_LblTxt: Name
+          PhoneNo_LblTxt: Phone number
+
+      PaymentDetails:
+        BuyOnCredit_lblTxt: Buy on credit
+        CreditCard_lblTxt: Card
+        Cash_lblTxt: Cash
+        Confirm_Btn: Confirm
+
+Settings:
+  Branches:
+    Added_Branch_Section:
+      BranchName_LblTxt: Branch name
+      Branch_OpeningDate_LblTxt: Branch opening date
+      ContactPersonName_LblTxt: Contact person name
+      ContactNumber_LblTxt: Contact number
+      Address_LblTxt: Address
+
+    Add_Branch_Popup:
+      Header_LblTxt: Add branch
+      BranchNameTxtBox_LblTxt: Branch name *
+      Apartment_Address_LblTxt: Flat /House no. /Building /Company /Apartment
+      StreetNameTxtBox_LblTxt: Area /Street /Sector /Town
+      CountryDD_LblTxt: Country
+      StateDD_LblTxt: State
+      DistrictDD_LblTxt: City
+      PinCodeTxtBox_LblTxt: Pincode/Zipcode
+      Cancel_Btn: CANCEL
+      Confirm_Btn: CONFIRM
+      
+      TestData:
+        BranchName: VK Info Tech Pvt Ltd.
+        Apartment_Address: Essaar Bharamma Apartment
+        StreetName: No 1 tollgate Sellath tamil Nagar, nearby Maruthi Nagar
+        CountryName: India
+        StateName: Tamil Nadu
+        DistrictName: Tiruchirappalli
+        PinCode: 621 109
+        country_name: IN
+        state_name: TN
+
+    Edit_Branch_Popup:
+      Header_LblTxt: Edit Branch
+      BranchTxtBox_LblTxt: Branch name
+      Apartment_Address_LblTxt: Flat /House no. /Building /Company /Apartment *
+      StreetNameTxtBox_LblTxt: Area /Street /Sector /Town*
+      CountryDD_LblTxt: Country
+      StateTxtBox_LblTxt: State
+      DistrictTxtBox_LblTxt: City
+      PinCodeTxtBox_LblTxt: Pincode/Zipcode *
+      Cancel_Btn: CANCEL
+      Update_Btn: UPDATE
+      PinCode_ErrMsg: Please enter a valid ZIP or postal code
+
+      TestData:
+        BranchName: VK_Info_Tech
+        Apartment_Address: imetanic info
+        StreetName: Kannur Street, nearby Ernak Nagar
+        StateName: Kerala
+        DistrictName: Alappuzha
+        PinCode: 621 109
+
+    Delete_Branch_Popup:
+      Header_LblTxt: Delete branch
+      Description_LblTxt: Are you sure you want to delete this branch?
+      Cancel_Btn: CANCEL
+      Confirm_Btn: CONFIRM
+
+  Users:
+    TabName: Users
+    AddUser_BtnTxt: ADD USER
+    Table:
+      SNo_ColumnHeaderTxt: S.No
+      Name_ColumnHeaderTxt: Name
+      UserName_ColumnHeaderTxt: Username
+      PhoneNumber_ColumnHeaderTxt: Phone number
+      DateOfJoining_ColumnHeaderTxt: Date of joining
+      LeavingDate_ColumnHeaderTxt: Date of leaving
+      SelectedBranch_ColumnHeaderTxt: Selected branch
+      Roles_ColumnHeaderTxt: Roles
+      Status_ColumnHeaderTxt: Status
+      Actions_ColumnHeaderTxt: Actions
+
+    Add_User_Popup:
+      Header_LblTxt: Add user
+      Name_TxtBox_LblTxt: Name *
+      PhoneNo_TxtBox_LblTXt: Phone number *
+      EmailId_TxtBox_LblTxt: Email ID *
+      DOB_TxtBox_LblTxt: Date of joining
+      Address_TxtBox_LblTxt: Address
+      Cancel_Btn: CANCEL
+      Confirm_Btn: CONFIRM
+
+      Testdata:
+        Name: POS Auto
+        PhoneNo: 98765432
+        EmailId: skullvk1@gmail.com
+        DOB: 16-12-1999
+        Address: Trichy
+
+    Select_Branch_Popup:
+      Header_LblTxt: Select Branch
+      Role_LblTxt: Role *
+      Admin_Role_LblTxt: Admin
+      Employee_Role_LblTxt: Employee
+      SelectBranch_DDTxt: Select branch
+      Address_LblTxt: "Address:"
+      Cancel_Btn: CANCEL
+      Confirm_Btn: CONFIRM
+
+      Testdata:
+        Name: POS Auto
+        PhoneNo: 98765432
+        EmailId: skullvk1@gmail.com
+        DOB: 16-12-1999
+        Address: Trichy
+
+    Edit_User_Popup:
+      Header_LblTxt: Edit user
+      Name_TxtBox_LblTxt: Name *
+      PhoneNo_TxtBox_LblTXt: Phone number *
+      EmailId_TxtBox_LblTxt: Email ID *
+      DateOfJoining_LblTxt: Date of joining
+      Address_TxtBox_LblTxt: Address
+      Cancel_Btn: CANCEL
+      Update_Btn: UPDATE
+
+      Testdata:
+        Name: POS Auto
+        PhoneNo: 98765432
+        EmailId: skullvk1@gmail.com
+        DOB: 16-12-1999
+        Address: Trichy
+
+    Edit_Branch_Popup:
+      Header_LblTxt: Edit Branch
+      Role_LblTxt: Role *
+      Admin_Role_LblTxt: Admin
+      Employee_Role_LblTxt: Employee
+      SelectBranch_DDTxt: Selected branch
+      Address_LblTxt: "Address:"
+      Cancel_Btn: CANCEL
+      Confirm_Btn: CONFIRM
+
+      Testdata:
+        Name: POS Auto
+        PhoneNo: 98765432
+        EmailId: skullvk1@gmail.com
+        DOB: 16-12-1999
+        Address: Trichy
+
+  Categories:
+    TabName: Categories
+    New_CategoryName: COTTON DRY WASHER
+    Edit_CategoryName: COTTON DRY CLEANER
+    Table:
+      SNo_ColumnTxt: S.No
+      Categories_ColumnTxt: Categories
+      NoOfProducts_ColumnTxt: Number of products
+      Actions_ColumnTxt: Actions
+
+    AddCategory_PopUp:
+      HeaderTxt:  Add category
+      CategoryTxtBox_PlaceHolder: Category name *
+      Cancel_Btn: Cancel
+      Confirm_Btn: Confirm
+
+    EditCategory_Popup:
+      HeaderTxt: Edit category
+      CategoryTxtBox_PlaceHolder: Category name *
+      Cancel_Btn: Cancel
+      Confirm_Btn: update
+
+    DeleteCategory_Popup:
+      Header_text: Confirm to delete
+      Delete_CategoryName: "Category name :"
+      Description_LblText: Are you sure you want to delete this category?
+      Note_LblText: "Note: When you delete the category, the added products are also deleted"
+      Cancel_Btn: CANCEL
+      Confirm_Btn: CONFIRM
+
+  Products:
+    TabName: Products
+    New_ProductName: Lycra Shirts
+    Edit_ProductName: Lycra Pants
+    New_ProductAmount: "5.00"
+    Edit_ProductAmount: "10.09"
+    Table:
+      SNo_ColumnTxt: S.No
+      ProductName_ColumnTxt: Product name
+      ProductAmount_ColumnTxt: Product price (QAR)
+      CategoryType_ColumnTxt: Category type
+      Actions_ColumnTxt: Actions
+
+  Customer:
+    TabName: Customers
+    Searched_PhNo: "82481 72045"
+
+    EditCustomer_Popup:
+      HeaderTxt: Edit customer
+      NameTxtBox_Placeholder: Name
+      PhoneNoTxtBox_Placeholder: Phone number
+      EmailTxtBox_Placeholder: Email
+      AddressTxtBox_Placeholder: Address (Optional)
+      CancelBtn_Txt: Cancel
+      ConfirmBtn_Txt: Confirm
+      New_Name: Vimal
+      New_PhoneNo: "82481720"
+      New_Email: "skullvk1@gmail.com"
+      New_Address:
+        Street: No.1 Tollgate, Maruti Nagar, Sellathamizh Nagar
+        District: Trichy, Tamil Nadu, India
+        PinCode: 621616

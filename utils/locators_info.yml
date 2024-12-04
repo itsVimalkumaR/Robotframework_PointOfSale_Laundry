@@ -1,0 +1,807 @@
+Common:
+  Browser: chrome
+  Clear_field:  CTRl+a+BACKSPACE
+
+  Localhost:
+    Backend_URL_Page:
+      Advanced_Btn: xpath=//button[contains(.,'Advanced')]
+      Proceed_Unsafe_LinkText: xpath=//a[.='Proceed to 127.0.0.1 (unsafe)']
+
+Login:
+  GetsStarted_lblTxt:  xpath=//div[@class='signall']//h1[contains(.,'Started')]
+  Dont_Account_lblTxt:  xpath=//div[@class='signall']//following::div//p[contains(.,'have Account ?')]
+  SignUp_lnkTxt:  xpath=//a[@href='/signup']//p[.='Signup']
+  Username_Icon:  xpath=//p[text()='Username']//parent::label//img
+  Username_Placeholder:  xpath=//p[text()='Username']
+  Username_Txtbox:  xpath=//input[@id='User name']
+  Password_Icon:  xpath=//p[text()='Password']//parent::label//img
+  Password_Placeholder:  xpath=//p[text()='Password']
+  Password_Txtbox:  css=#Password
+  Encryption_Icon:  css=#standard-adornment-password>svg[data-testid='VisibilityIcon']
+  Decryption_Icon:  css=#standard-adornment-password>svg[data-testid='VisibilityOffIcon']
+  Login_Btn:  id=login
+
+Signup:
+  Already_Account_lblTxt: xpath=//div[@class='signall']//following::div//p[.='Already have Account ?']
+  Login_lnkTxt: xpath=//a[@href='/']//p[text()='Login']
+  Username_Icon:  xpath=//p[.='Username']//parent::label//img
+  Username_lblTxt:  xpath=//p[.='Username']
+  Username_TxtBox:  xpath=//p[.='Username']//parent::label//parent::div//input
+  Name_Icon:  xpath=//p[.='Name']//parent::label//img
+  Name_lblTxt:  xpath=//p[.='Name']
+  Name_TxtBox:  xpath=//p[.='Name']//parent::label//parent::div//input
+  BusinessName_Icon:  xpath=//p[.='Organization name']//parent::label//img
+  BusinessName_lblTxt:  xpath=//p[.='Organization name']
+  BusinessName_TxtBox:  xpath=//p[.='Organization name']//parent::label//parent::div//input
+  DateOfBirth_Icon: xpath=//p[contains(.,' Date of Birth')]//parent::label//img
+  DateOfBirth_lblTxt: xpath=//p[.=" Date of Birth (dd-mm-yyyy)"]
+  DateOfBirth_TxtBox: xpath=//p[contains(.,' Date of Birth')]//parent::label//parent::div//input
+  PhoneNo_Icon: xpath=//p[.='Phone Number']//parent::label/img
+  PhoneNo_LblTxt: xpath=//p[.='Phone Number']
+  PhoneNo_TxtBox: xpath=//p[.='Phone Number']//parent::label//parent::div//input
+  Address_Icon: xpath=//p[contains(.,'Address')]//parent::label/img
+  Address_lblTxt: xpath=//p[text()='Address (e.g., Door number, Street name, Village/City name)']
+  Address_TxtBox: xpath=//p[contains(.,'Address')]//parent::label//parent::div//input
+  Password_Icon: xpath=//p[.='Password']//parent::label/img
+  Password_lblTxt: xpath=//p[.='Password']
+  Password_TxtBox: xpath=//p[.='Password']//parent::label//parent::div//input
+  Encryption_Icon: css=#standard-adornment-password>svg[data-testid='VisibilityIcon']
+  Decryption_Icon: css=#standard-adornment-password>svg[data-testid='VisibilityOffIcon']
+  Signup_Btn: xpath=//button[text()='Signup']
+  Exist_Username_Msg: xpath=//div[@class='overview']//div//div//p[.='Username already exists.']
+  Invalid_PhoneNo_Msg: //p[.='Phone Number']//parent::label//following::p[.='Your phone number is incomplete']
+  Invalid_Password_Msg: //div[@class='overview']//div[8]
+  Email_Icon: xpath=//*[@data-testid='MailOutlineIcon']
+  Email_LblTxt: xpath=//input[@type='email']//parent::div//parent::div//label//p[.='Email']
+  Email_TxtBox: xpath=//input[@type='email']
+  State_Icon: xpath=//*[@data-testid='PersonPinCircleIcon']
+  State_LblTxt: xpath=//*[@data-testid='PersonPinCircleIcon']//following-sibling::p[.='State']
+  State_DropDownBtn: id=state
+  State_Options: xpath=//ul[@aria-labelledby='state-label']//li
+  State_Opt: xpath=//ul[@aria-labelledby='state-label']//li[text()='{value}']
+  Country_Icon: xpath=//*[@data-testid='PublicIcon']
+  Country_LblTxt: xpath=//*[@data-testid='PublicIcon']//following-sibling::p[.='Country']
+  Country_DropDownBtn: id=country
+  Country_Options: xpath=//ul[@aria-labelledby='country-label']//li
+  Country_Opt: xpath=//ul[@aria-labelledby='country-label']//li[text()='{}']
+  PinCode_Icon: xpath=//*[@data-testid='FiberPinIcon']
+  PinCode_LblTXt: xpath=//*[@data-testid='FiberPinIcon']//following-sibling::p[.='Postal code']
+  PinCode_TxtBox: css=input#pincode
+  PhoneNo_ErrMsg_TxtBox: xpath=//*[@id="outlined-basic"]//self::input[@value='{value}']
+  Exist_BusinessName_Msg: xpath=//div[@class='overview']//div//div//p[.='Organization name already exists']
+  Exist_EmailId_Msg: xpath=//div[@class='overview']//div//div//p[.='Email already exists']
+  BusinessTypes:
+    Icon: xpath=//*[@data-testid='AddBusinessIcon']
+    LblTxt: xpath=//*[@data-testid='AddBusinessIcon']//following-sibling::p[.='Business Type']
+    Dropdown_Btn: id=business-type
+    Options: xpath=//ul[@aria-labelledby='business-type-label']//li
+    Laundry_Option: xpath=//li[@data-value='laundary']
+    CarWash_Option: xpath=//li[@data-value='car-wash']
+
+SetPassword:
+  HeaderTxt: xpath=//div[@id='root']//div//div//h4[text()='Create Your Password']
+  Create_Password_LblTxt: xpath=//label[contains(@id,'-label')]//self::label[text()='Create Password']
+  Create_Password_TxtBox: xpath=//label[text()='Create Password']//parent::div//div//input
+  Create_Password_EncryptIcon: xpath=//label[text()='Create Password']//parent::div//div//button//*[@aria-hidden='true']
+  Confirm_Password_LblTxt: xpath=//label[contains(@id,'-label')]//self::label[text()='Confirm Password']
+  Confirm_Password_TxtBox: xpath=//label[text()='Confirm Password']//parent::div//div//input
+  Confirm_Password_EncryptIcon: xpath=//label[text()='Create Password']//parent::div//div//button//*[@aria-hidden='true']
+  Confirm_Btn: xpath=//button[text()='Set Password']
+
+Home:
+  IconForward_Btn: xpath=//menu//parent::div//button[@id='Expandbtn']//*[@data-testid='ArrowForwardIosIcon']
+  IconBackward_Btn: xpath=//*[@data-testid="ArrowBackIosIcon"]//parent::button
+  BusinessProfile_Logo: xpath=//div[@class='menu-container']//div//menu//div//div//img[@class='logo-container']
+  MenuLists_BusinessName:  xpath=//img[@class='logo-container']//parent::div//parent::div//following::h3/i
+  Home_Icon: xpath=//a[@href='/v1/home']//button//*[@data-testid='HomeIcon']
+  HomeIcon_LblTxt: xpath=//a[@href='/v1/home']//p[.='Home']
+  DashBoard_Icon: xpath=//a[@href='/v1/Dashboard']//button//*[@data-testid='DashboardRoundedIcon']
+  DashBoardIcon_LblTxt: xpath=//a[@href='/v1/Dashboard']//p[.='Dashboard']
+  Orders_Icon: xpath=//a[@href='/v1/Order']//button//*[@data-testid='ViewListIcon']
+  OrdersIcon_LblTxt: xpath=//a[@href='/v1/Order']//p[.='Orders']
+#  ShoppingCart_Icon: xpath=//*[@data-testid='ShoppingCartIcon']      # Based on not required now
+  Ledger_Icon: xpath=//a[@href='/v1/Ledger']//button//*[@data-testid='ImportContactsIcon']
+  LedgerIcon_LblTxt: xpath=//a[@href='/v1/Ledger']//p[.='Ledger']
+  Settings_Icon: xpath=//a[@href='/v1/Edit/Location']//button//*[@data-testid='SettingsSuggestIcon']
+  SettingsIcon_LblTxt: xpath=//a[@href='/v1/Edit/Location']//p[.='Settings']
+#  OrderStatus_lnkTxt: css=#home_header>button    # Based on not required
+  HomePage_Header:  xpath=//div[@id='com_header']//h2[.='Point of Sale']
+
+  Hamburger_MenuIcons:
+    Hamburger_menu: xpath=//div[@class='menubaricon']//button//*[@data-testid='MenuIcon']
+    IconForward_Btn: xpath=//div[@class='menuicons']//button[@id='Expandbtn']//*[@data-testid='ArrowForwardIosIcon']
+    IconBackward_Btn: xpath=//div[@class='menuicons']//button[@id='Expandbtn']//*[@data-testid='ArrowBackIosIcon']
+    BusinessProfile_Logo: xpath=//div[@class='menuicons']//div//div//div//img[@class='logo-container']
+    MenuLists_BusinessName: xpath=//div[@class='menuicons']//div//div//div//h3//i
+    Home_Icon: xpath=(//div[@class='menuicons']//div)[2]//menu//a[@href='/v1/home']//button//*[@data-testid='HomeIcon']
+    HomeIcon_LblTxt: xpath=(//div[@class='menuicons']//div)[2]//menu//a[@href='/v1/home']//p
+    DashBoard_Icon: xpath=(//div[@class='menuicons']//div)[2]//menu//a[@href='/v1/Dashboard']//button//*[@data-testid='DashboardRoundedIcon']
+    DashBoardIcon_LblTxt: xpath=(//div[@class='menuicons']//div)[2]//menu//a[@href='/v1/Dashboard']//p
+    Orders_Icon: xpath=(//div[@class='menuicons']//div)[2]//menu//a[@href='/v1/Order']//button//*[@data-testid='ViewListIcon']
+    OrdersIcon_LblTxt: xpath=(//div[@class='menuicons']//div)[2]//menu//a[@href='/v1/Order']//p
+#  ShoppingCart_Icon: xpath=//*[@data-testid='ShoppingCartIcon']      # Based on not required now
+    Ledger_Icon: xpath=(//div[@class='menuicons']//div)[2]//menu//a[@href='/v1/Ledger']//button//*[@data-testid='ImportContactsIcon']
+    LedgerIcon_LblTxt: xpath=(//div[@class='menuicons']//div)[2]//menu//a[@href='/v1/Ledger']//p
+    Settings_Icon: xpath=(//div[@class='menuicons']//div)[2]//menu//a[@href='/v1/Edit/Location']//button//*[@data-testid='SettingsSuggestIcon']
+    SettingsIcon_LblTxt: xpath=(//div[@class='menuicons']//div)[2]//menu//a[@href='/v1/Edit/Location']//p
+#  OrderStatus_lnkTxt: css=#home_header>button    # Based on not required
+    HomePage_Header:  xpath=//div[@id='com_header']//h2[.='Point of Sale']
+
+  Profile:
+    Dropdown_Btn: xpath=//*[@data-testid='ArrowDropDownIcon']
+    Profile_Icon: xpath=//*[@id="head_name"]/div[2]/div/button
+    Profile_Opt: id=Profile
+    FeedBack_Opt: id=feedback
+    Theme_Opt: xpath=//div[@class='dropdown-content']//a[.='Theme']
+    Logout_Btn: id=logout
+
+  Category_Section:
+    CategorySection_HeaderTxt: css=#Category_title>h2
+    CategoryField: css=#category_name>button:nth-child({value})
+    Categories_Fields: css=#category_name>button
+    Category_Field: css=#category_name>button:nth-child({value})
+    AddedCategory_Btn: xpath=//div[@id='category_name']//button[.='Add Category']
+
+  Product_Section:
+    ProductBtn: css=#boby_product>button:nth-child(1)
+    Products_Btns: css=#boby_product>button>h4
+    ProductBtn_Name: xpath=//div[@id='boby_product']//button[1]//h4
+    ProductBtns_Name: xpath=//div[@id='boby_product']//button//h4
+    Product_DeleteBtns: xpath=//div[@class='order-details']//div//div//button//*[@data-testid='DeleteIcon']
+    Product_DeleteBtn: xpath=//h3[.='{value}']//parent::div//button//*[@data-testid='DeleteIcon']
+    Products_BtnAmount: xpath=//h4[text()='{value}']//parent::button//h3
+    ProductField: css=#boby_category>div:nth-child(2)>button:nth-child({value})
+    Products_Fields: css=#boby_category>div:nth-child(2)>button
+
+  Order_Summary:
+    OrderSummaryBody: id=order_details
+    OrderSection_HeaderTxt: css=#order_summary>h2
+    NewOrder_Btn: xpath=//div[@class='order-calculater']//div[5]//button[1]
+    Checkout_Btn: xpath=//button[.='CHECKOUT']
+    SubTotal_lblTxt: css=div.order-calculater>div:nth-child(1)>p:nth-child(1)
+    SubTotal_Value: css=div.order-calculater>div:nth-child(1)>p:nth-child(2)
+    TotalQuantity_lblTxt: css=div.order-calculater>div:nth-child(2)>p:nth-child(1)
+    TotalQuantity_Value: css=div.order-calculater>div:nth-child(2)>p:nth-child(2)
+    Discount_LblTxt: xpath=//*[@id="calcuaterview_options"]/div[2]/div[3]/p[1]
+    Discount_TxtBox: css=div.order-calculater>div:nth-child(3)>p:nth-child(2)
+    Total_lblTxt: css=div.order-calculater>div:nth-child(4)>p:nth-child(1)
+    Total_Value: css=div.order-calculater>div:nth-child(4)>p:nth-child(2)
+    Selected_ProductBtnTxt: xpath=//*[@id='order_details']//div[@id='productname_amount']//h3[.='{value}']
+    AddedProduct_DeleteBtn: xpath=//h3[text()='{value}']//parent::div//button
+    AddedProduct_Name: xpath=//div[@id='order_details']//div//div//h3[text()='{value}']
+    AddedProduct_Amount: xpath=//h3[text()='{value}']//parent::div//following::div[1]//h3
+    AddedProduct_DecreaseBtn: xpath=//h3[text()='{value}']//parent::div//following::div[1]//div[@id='value']//button[1]
+    AddedProduct_IncreaseBtn: xpath=//h3[text()='{value}']//parent::div//following::div[1]//div[@id='value']//button[2]
+    AddedProduct_Count: xpath=//h3[text()='{value}']//parent::div//following::div[1]//div[@id='value']//h1
+    SelectedProduct_PriceTxt: xpath=//*[@id="order_details"]//div[1]//div[2]//h3
+
+  SelectCustomer_Popup:
+    Header_Txt: xpath=//div[@class='customersearch']//div//h2
+    CloseIcon: xpath=//*[@data-testid='CloseIcon']
+    AddProduct_Btn: xpath=//h3[.='Add Product']//parent::button
+    AddCustomer_Btn: xpath=//h3[.='Add customer']//parent::button
+    SearchTxtBox_LblTxt: xpath=//div[@class='search-on']//div//label[.='Search by Name or Phone number']
+    Search_TxtBox: xpath=//div[@class='search-on']//input
+#    Search_Icon: xpath=//div[@class='search-on']//*[@data-testid='SearchIcon']     #Regarding not required
+    Note_LblTx: xpath=//div[@id='overall_customer_selection']//b//i
+    FirstRow_CustomerName: xpath=//div[@class='customerdeatiles']//div//table//tbody//tr[1]//td[1]
+    Table_CustomerNames: xpath=//div[@class='customerdeatiles']//div//table//tbody//tr//td[1]
+    FirstRow_Customer_PhNo: xpath=//div[@class='customerdeatiles']//div//table//tbody//tr[1]//td[2]
+    Table_Customer_PhNumbers: xpath=//div[@class='customerdeatiles']//div//table//tbody//tr//td[2]
+    AddedCustomer_loc: xpath=//div[@class='customerdeatiles']//div//table//tbody//tr//td[text()='{value}']
+
+    AddCustomer_Popup:
+      Header_LblTxt: xpath=//div[@class='customerscreen']//div//h2[.='Enter customer details']
+      Name_lblTxt: xpath=//div[@class='input-name']//label//span[contains(.,'Name')]
+      Name_TxtBox: xpath=//div[@class='input-name']//div//div//input
+      PhoneNo_lblTxt: xpath=//div[@class='input-phone ']//label//span[contains(.,'Phone number')]
+      PhoneNo_TxtBox: xpath=//div[@class='input-phone ']//div//div//input
+      PhoneNo_ExistMsg: xpath=//span[contains(.,'Phone number')]//parent::label//following-sibling::p[.='Phone number already exists.']
+      Email_lblTxt: xpath=//div[@class='input-Email']//label
+      Email_TxtBox: xpath=//div[@class='input-Email']//div//div//input
+      Address:
+        Address_lblTxt: xpath=//div[@class='Aaddress ']//p[text()='Address (Optional):']
+        Street_Village_LblTxt: xpath=//div[@class='Aaddress ']//div//ul/div//label[.='Street/Village']
+        Street_Village_TxtBox: xpath=//label[.='Street/Village']//parent::div//div//input
+        District_State_LblTxt: xpath=//div[@class='Aaddress ']//div//ul/div//label[.='District/State']
+        District_State_TxtBox: xpath=//label[.='District/State']//parent::div//div//input
+        Pincode_Zipcode_LblTxt: xpath=//div[@class='Aaddress ']//div//ul/div//label[.='Pincode/Zipcode']
+        Pincode_Zipcode_TxtBox: xpath=//label[.='Pincode/Zipcode']//parent::div//div//input
+      Cancel_Btn: xpath=//div[@class='customerscreen']/div[6]//div[1]//div//button
+      AddCustomer_Btn: xpath=//div[@class='customerscreen']/div[6]//div[2]//div//button
+      Email_ExistMsg: id=outlined-basic-helper-text
+
+    CustomerLedger_Popup:
+      Header_LblTxt: xpath=//div[@class='customerledger']//ul//h1[.='Customer ledger']
+      Name_LblTxt: xpath=//div[@class='customerledger']//ul//li//p[.='Name']
+      Name_ValueTxt: xpath=//p[.='Name']//parent::li//p[2]
+      RemainingBalance_LblTxt: xpath=//div[@class='customerledger']//ul//li//p[contains(.,'Outstanding balance')]
+      RemainingBalance_ValueTxt: xpath=//p[.='Outstanding balance ']//parent::li//p[2]
+      Cancel_Btn: xpath=//h3[.='Cancel']//parent::button
+      Confirm_Btn: xpath=//h3[.='Confirm']//parent::button
+
+    Product_Details:
+      HeaderTxt: xpath=//div[@id='Popup']//div//h2[.='Product details']
+      Back_Btn: xpath=//div[@id="Popup"]//button//*[@data-testid='ArrowBackIcon']
+      CloseIcon: xpath=//button[@class='cancel-icon-product']//*[@data-testid='CloseIcon']
+      CustomerName_lblTxt: "xpath=//h2[.='Product details']//parent::div//div//div//p[.='Customer name :']"
+      CustomerName_value: xpath=//h2[.='Product details']//parent::div//div//div[2]//p[1]
+      PhoneNumber_lblTxt: "xpath=//h2[.='Product details']//parent::div//div//div//p[.='Phone number  :']"
+      PhoneNumber_value: xpath=//h2[.='Product details']//parent::div//div//div[2]//p[2]
+      Table_loc: id=Table
+      Table_ColumnHeader_LblTxt:  css=div#Table>div>table>thead>tr>th:nth-child({value})
+      TotalAmount_lblTxt:  "xpath=//div[@id='Popup']//div//h3[text()='Total price : ']"
+      OrderConfirm_Btn: xpath=//h3[.='Order Confirm']//parent::button
+
+    Choose_PaymentMethod:
+      HeaderTxt: css=div.paymentview1>h1
+      BuyOnCredit_Img: id=buy_on_credit_payment
+      BuyOnCredit_LblTxt: xpath=(//div[@class='paymentview'])[1]//p[.='Buy on credit']
+      CreditCard_Img: id=credit_cart_payment
+      CreditCard_LblTxt: xpath=(//div[@class='paymentview'])[2]//p[.='Credit card']
+      Cash_Img: id=cash_payment
+      Cash_LblTxt: xpath=//div[@class='paymentview']//p[.='Cash']
+      CloseIcon: css=button.cancel-icon-payment>svg[data-testid='CloseIcon']
+
+      BuyOnCredit_PaymentSummary:
+        BackArrow_Btn: xpath=//div[@class='back-Arrow2']//button//*[@data-testid='ArrowBackIcon']
+        CloseIcon: xpath=//div[@class='Popup-late']//button//*[@data-testid='CloseIcon']
+        HeaderTxt: css=div.Popup_bill>h1
+        Add_Product_Btn: xpath=//h3[.='add product']//parent::button
+        Customer_logo: css=div.Popup_bill>img
+        SelectedCustomer_lblTxt: xpath=//div[@class='Popup_bill']//*[.='Selected customer']
+        PaymentMethod_lblTxt: xpath=//div[@class='Popup_bill']//div//p[contains(.,'Payment method')]
+        PaymentMethodOf_BuyOnCredit_text: "xpath=//div[@class='Popup_bill']//div//p[.=': Buy on credit']"
+        CustomerName_lblTxt: xpath=//div[@class='Popup_bill']//div//p[contains(.,'Customer name')]
+        CustomerName: "xpath=//div[@class='Popup_bill']//div//p[.=': {value}']"
+        OrderDate_lblTxt: xpath=//div[@class='Popup_bill']//div//p[contains(.,'Order date')]
+        OrderTime_lblTxt: xpath=//div[@class='Popup_bill']//div//p[contains(.,'Order time')]
+        OutstandingBalance_LblTxt: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div//p[text()='Outstanding balance:']"
+        OutstandingBalance_CashImg: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div[2]//img[1]"
+        OutstandingBalance_Value: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div[3]//p[1]"
+        OrderPrice_lblTxt: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div//p[text()='Order price:']"
+        OrderPrice_CashImg: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div[2]//img[2]"
+        OrderPrice_Value: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div[3]//p[2]"
+        Discount_lblTxt: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div//p[text()='Discount: ']"
+        Discount_CashImg: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div[2]//img[3]"
+        Discount_Value: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div[3]//p[3]"
+        FinalAmount_lblTxt: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div//p[text()='Final price (Incl Discount):']"
+        FinalAmount_CashImg: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div[2]//img[4]"
+        FinalAmount_Value: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div[3]//p[4]"
+        Total_lblTxt: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div//p[text()='Total (Incl Outstanding):']"
+        Total_CashImg: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div[2]//img[5]"
+        Total_Value: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div[3]//p[5]"
+#        RemainingAmount_lblTxt: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div//p[text()='Remaining price:']"    # Regarding no need to show Remaining price
+#        RemainingAmount_CashImg: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div[2]//img[2]"
+#        RemainingAmount_Value: "xpath=(//div[@class='Popup-late']//div[contains(@style,'display: grid;')])[1]//div//div[3]//p[2]"
+#        DeliveryDate_lblTxt: css=div.psview>h3     # regarding no need the delivery date
+#        DeliveryDate_TxtBox: css=div.psview>div>input
+        Cancel_Btn: xpath=//h3[.='CANCEL']//parent::button
+        Complete_Btn: xpath=//h3[.='COMPLETE']//parent::button
+
+      CreditCard_PaymentSummary:
+        Pay_Btn: xpath=//button[@type='submit']
+
+      CashPaymentSummary:
+        BackArrow_Btn: xpath=//div[@class='Popup']//button//*[@data-testid='ArrowBackIcon']
+        CloseIcon: xpath=//div[@class='Popup']//button//*[@data-testid='CloseIcon']
+        HeaderTxt: css=div.Popup_bill>h1
+        Add_Product_Btn: xpath=//h3[.=' Add product']//parent::button
+        Customer_logo: css=div.Popup_bill>img
+        SelectedCustomer_lblTxt: xpath=//div[@class='Popup_bill']//*[.='Selected customer']
+        PaymentMethod_lblTxt: xpath=//div[@class='Popup_bill']//div//p[.='Payment method']
+        PaymentMethodOf_Cash_text: "xpath=//div[@class='Popup_bill']//div//p[contains(.,': Cash')]"
+        CustomerName_lblTxt: xpath=//div[@class='Popup_bill']//div//p[.='Customer name']
+        CustomerName: "xpath=//div[@class='Popup_bill']//div//p[.=': {value}']"
+        OrderDate_lblTxt: xpath=//div[@class='Popup_bill']//div//p[contains(.,'Order date')]
+        OrderTime_lblTxt: xpath=//div[@class='Popup_bill']//div//p[contains(.,'Order time')]
+        Outstanding_balance_checkbox: xpath=//input[@type='checkbox']//parent::span//*[@data-testid='CheckBoxOutlineBlankIcon']
+        OutstandingBalance_Checkbox: xpath=//*[.='Outstanding balance:']//parent::div//span//input[@type='checkbox']
+        OutstandingBalance_LblTxt: xpath=//input[@type='checkbox']//parent::span//following::p[contains(.,'Outstanding balance')]
+        OutstandingBalance_CashImg: xpath=//div[@class='Popup']//div//div//div//img[1]
+        OutstandingBalance_Value: xpath=//div[@class='Popup']//div//div//div[3]//p[1]
+        OrderAmount_LblTxt: xpath=//input[@type='checkbox']//parent::span//following::p[contains(.,'Order price')]
+        OrderAmount_CashImg: xpath=//div[@class='Popup']//div//div//div//img[2]
+        OrderAmount_Value: xpath=//div[@class='Popup']//div//div//div[3]//p[2]
+        Discount_lblTxt: xpath=//input[@type='checkbox']//parent::span//following::p[contains(.,'Discount')]
+        Discount_CashImg: xpath=//div[@class='Popup']//div//div//div//img[3]
+        Discount_Value: xpath=//div[@class='Popup']//div//div//div[3]//p[3]
+        FinalAmount_lblTxt: xpath=//input[@type='checkbox']//parent::span//following::p[contains(.,'Final price')]
+        FinalAmount_CashImg: xpath=//div[@class='Popup']//div//div//div//img[4]
+        FinalAmount_Value: xpath=//div[@class='Popup']//div//div//div[3]//p[4]
+        ReceivedAmount_lblTxt: xpath=//input[@type='checkbox']//parent::span//following::p[contains(.,'Received price')]
+        ReceivedAmount_CashImg: xpath=//div[@class='Popup']//div//div//div//img[5]
+        ReceivedAmount_InputBox: xpath=//div[@class='Popup']//div//div//p//input
+        ReceivedAmount_PaymentTypeTxt: xpath=//input[@class='psinput']//parent::p
+        RemainingAmount_lblTxt: xpath=//input[@type='checkbox']//parent::span//following::p[contains(.,'Remaining price')]
+        RemainingAmount_CashImg: xpath=//div[@class='Popup']//div//div//div//img[6]
+#        RemainingAmount_TxtBox: css=div.Popup> div:nth-child(4)>div>div:nth-child(3)>h3>input      # regarding changed the input filed for received amount
+        RemainingAmount_Value: xpath=//div[@class='Popup']//div//div//div//p[6]
+#        DeliveryDate_lblTxt: css=div.psview>h3     # regarding no need the delivery date
+#        DeliveryDate_TxtBox: css=div.psview>div>input
+        Cancel_Btn: css=div.Product_data_save>a>div>div>button
+        Complete_Btn: css=div.Product_data_save>div>div>button
+
+      PaymentSuccess_Popup:
+        Img: xpath=//*[@id="popup"]/img[@src="/static/media/Done.138ce807f205eed06d2e.png"]
+        Msg_lblTxt: xpath=//p[text()='Your payment has been completed successfully']
+        PrintReceipt_Btn: xpath=//button[text()='PRINT RECEIPT']
+        SendMail_Btn: css=div#done_btn>div>button
+        SendMsg_Btn: css=div#send_mail_btn>div>button
+        Done_Btn: css=div#sent_messages_btn>div>button
+
+Orders:
+  HeaderTxt: xpath=//div[@id='com_header']//h2
+  Search_TxtBox_LblTxt: xpath=//input[@placeholder='Search by Name or Phone number or Order ID']
+  Search_textBox: id=Search-Phone-number
+  ImportBtn: xpath=//h3[.='Import']//parent::button
+  Table: id=Table
+  Multiple_ColumnHeaders: css=div#Table>div>table>thead>tr>th
+  SNo_ColumnHeaderTxt: css=div#Table>div>table>thead>tr>th:nth-child(1)
+  Name_ColumnHeaderTxt: css=div#Table>div>table>thead>tr>th:nth-child(2)
+  NameColumn_Value: xpath=(//*[@id='Table']/div/table/tbody/tr/td[2]//self::td[text()='{value}'])[1]
+  PhoneNo_ColumnHeaderTxt: css=div#Table>div>table>thead>tr>th:nth-child(3)
+  PhoneNoColumn_Value: xpath=//*[@id='Table']/div/table/tbody/tr/td[3]//self::td[text()='{value}']
+  OrderID_ColumnHeaderTxt: css=div#Table>div>table>thead>tr>th:nth-child(4)
+  OrderIDColumn_Value: xpath=//*[@id='Table']/div/table/tbody/tr/td[4]//self::td[text()='{value}']
+  OrderStatus_ColumnHeaderTxt: css=div#Table>div>table>thead>tr>th:nth-child(5)
+  OrderStatusColumn_Value: xpath=(//*[@id='Table']/div/table/tbody/tr/td[5]//self::td[text()='{value}'])[1]
+  Actions_ColumnHeaderTxt: css=div#Table>div>table>thead>tr>th:nth-child(6)
+  Actions_ColumnBtns: xpath=//*[@id="Table"]/div/table/tbody/tr/td/button
+  New_ViewOrder_Btn: xpath=(//td[text()='{value}']//following::td//button)[1]
+  ViewOrderBtn: xpath=//td[.='{value}']//parent::tr//td//button//*[@data-testid='ViewListIcon']
+  DeleteIcon: xpath=//td[.='{value}']//parent::tr//td//*[@data-testid='DeleteIcon']
+  NoDataAvailable_text: xpath=//div[@id='Table']//div//table//tbody//tr//td[.='No data available']
+  RowsPerPage_lblTxt:  xpath=//p[contains(@class,'MuiTablePagination-selectLabel')]
+  RowsPerPage_DDArrow:  xpath=//div[@id='Table']//*[@aria-label='rows per page']
+  RowsPerPage_DDOptions:  xpath=//div[@id='Table']//*[@aria-label='rows per page']//option
+  RowsPerPage_DDOption:  xpath=//div[@id='Table']//*[@aria-label='rows per page']//option[text()='{value}']
+  ShowEntries: xpath=//*[@data-testid='ArrowDropDownIcon']//parent::div//following::p
+  Pagination_PreviousBtn: css=button[title='Go to previous page']
+  Pagination_NextBtn: xpath=//button[@title='Go to next page']//*[@data-testid='KeyboardArrowRightIcon']
+
+  ChooseAnOption:
+    LblTxt: xpath=//select[@id='options']//parent::div//label
+    Dropdown: xpath=//select[@id='options']
+    Today_Opt: xpath=//select[@id='options']//option[@value='Today']
+    Yesterday_Opt: xpath=//select[@id='options']//option[@value='Yesterday']
+    LastWeek_Opt: xpath=//select[@id='options']//option[@value='Last Week']
+    LastMonth_Opt: xpath=//select[@id='options']//option[@value='Last Month']
+    Last_180days_Opt: xpath=//select[@id='options']//option[@value='180 days']
+    CustomizeDate_Opt: xpath=//select[@id='options']//option[@value='CustomizeDate']
+    FromTo_LblTxt: css=p.Select_Date_cus
+    FromDate_TxtBox: css=p.Select_Date_cus>input#from_Date
+#    FromDate_TxtBox: css=p.Select_Date_cus>input:nth-child(1)
+    ToDate_TxtBox: css=p.Select_Date_cus>input#to_Date
+#    ToDate_TxtBox: css=p.Select_Date_cus>input:nth-child(2)
+    Search_Icon: css=p.Select_Date_cus>button
+
+  ChooseExportFile:
+    LblTxt: xpath=//div[@class='import_Export']//div[@class='selection_option']//label
+    Dropdown_Btn: xpath=//div[@class='import_Export']//div[@class='selection_option']//select[@class='select_expo']
+    CSV_Opt: xpath=//div[@class='import_Export']//div[@class='selection_option']//select[@class='select_expo']//option[@value='CSV']
+    PDF_Opt: xpath=//div[@class='import_Export']//div[@class='selection_option']//select[@class='select_expo']//option[@value='PDF']
+
+  ViewOrders:
+    HeaderTxt: css=div#com_header>h2
+    tableHeaders_Txt: xpath=//div[@class='overall_page']//ul[1]//li
+    OrderID_LblTxt: xpath=//h4[@class='cart_no']
+    Name_LblTxt: xpath=//div[@class='Produt_name']//h3[1]
+    PriceDetails_LblTxts: xpath=//div[@class='price_detailss']//ul//li//h3
+    PriceDetails_LblTxt: xpath=//div[@class='price_detailss']//ul//li[{value}]//h3
+    PaymentMethod_Type: xpath=//div[@class='price_detailss']//ul//li[6]//p
+    OrderStatus_LblTxt: xpath=//div[@class='drop_down_oredr']//div//label
+    OrderStatus_DropDownBtn: id=demo-customized-select-native
+    OrderStatus_DropDownOpts: css=#demo-customized-select-native>option
+    OrderStatus_DropDownOpt_Selected: css=#demo-customized-select-native>option:nth-child(1)
+    confirm_DDOpt: css=#demo-customized-select-native>option[value='Confirm']
+    inProgress_DDOpt: css=#demo-customized-select-native>option[value='In-process']
+    waitingDelivery_DDOpt: css=#demo-customized-select-native>option[value='Waiting for delivery']
+    PrintReceipt_Btn: css=button.print_btn_order
+    Cancel_Btn: css=button.cance_btn
+    PaymentMethods:
+      LblTxt: css=div.payment_type
+      BuyOnCredit_RadioBtn: xpath=//label[.='Buy on credit']//parent::li//input
+      BuyOnCredit_RadioBtn_LblTxt: xpath=//div[@class='payment_Methodss']//div//ul//li//label[.='Buy on credit']
+      Card_RadioBtn: xpath=//label[.='Card']//parent::li//input
+      Card_RadioBtn_LblTxt: xpath=//div[@class='payment_Methodss']//div//ul//li//label[.='Card']
+      Cash_RadioBtn: xpath=//label[.='Cash']//parent::li//input
+      Cash_RadioBtn_LblTxt: xpath=//div[@class='payment_Methodss']//div//ul//li//label[.='Cash']
+      Complete_Btn: //h3[.='COMPLETE']//parent::button
+
+      BuyOnCredit_PaymentSummary:
+        BackArrow_Btn: xpath=//div[@class='back-Arrow2-order']//button//*[@data-testid='ArrowBackIcon']
+        CloseIcon: xpath=//button[@class='cancel-icon-order']//*[@data-testid='CloseIcon']
+        HeaderTxt: css=div.popup-bill-cash>h1
+#        Add_Product_Btn: xpath=//h3[.='add product']//parent::button    # Need to confirm
+        Customer_logo: css=div.popup-bill-cash>img
+        SelectedCustomer_lblTxt: xpath=//div[@class='popup-bill-cash']//*[.='Selected customer']
+        PaymentMethod_lblTxt: xpath=//div[@class='popup-bill-cash']//div//p[contains(.,'Payment method')]
+        PaymentMethodOf_BuyOnCredit_text: "xpath=//div[@class='popup-bill-cash']//div//p[.=': Buy on credit']"
+        CustomerName_lblTxt: xpath=//div[@class='popup-bill-cash']//div//p[contains(.,'Customer name')]
+        CustomerName: "xpath=//div[@class='popup-bill-cash']//div//p[.=': {value}']"
+        OrderDate_lblTxt: xpath=//div[@class='popup-bill-cash']//div//p[contains(.,'Order date')]
+        OrderTime_lblTxt: xpath=//div[@class='popup-bill-cash']//div//p[contains(.,'Order time')]
+        OutstandingBalance_LblTxt: "xpath=//div[@class='conform']//div[2]//div//div//p[text()='Outstanding balance:']"
+        OutstandingBalance_CashImg: xpath=//div[@class='conform']//div[2]//div//div//img[1]
+        OutstandingBalance_Value: xpath=//div[@class='conform']//div[2]//div//div[3]//p[1]
+        OrderPrice_lblTxt: "xpath=//div[@class='conform']//div[2]//div//div//p[.='Order price:']"
+        OrderPrice_CashImg: xpath=//div[@class='conform']//div[2]//div//div//img[2]
+        OrderPrice_Value: xpath=//div[@class='conform']//div[2]//div//div[3]//p[2]
+        Discount_lblTxt: "xpath=//div[@class='conform']//div[2]//div//div//p[.='Discount :']"
+        Discount_CashImg: xpath=//div[@class='conform']//div[2]//div//div//img[3]
+        Discount_Value: xpath=//div[@class='conform']//div[2]//div//div[3]//p[3]
+        FinalPrice_lblTxt: "xpath=//div[@class='conform']//div[2]//div//div//p[text()='Final price (Incl Discount) :']"
+        FinalPrice_CashImg: xpath=//div[@class='conform']//div[2]//div//div//img[4]
+        FinalPrice_Value: xpath=//div[@class='conform']//div[2]//div//div[3]//p[4]
+        Total_lblTxt: "xpath=//div[@class='conform']//div[2]//div//div//p[text()='Total (Incl Outstanding):']"
+        Total_CashImg:  xpath=//div[@class='conform']//div[2]//div//div//img[5]
+        Total_Value: xpath=//div[@class='conform']//div[2]//div//div[3]//p[5]
+        Cancel_Btn: xpath=//div[@class='btn_con']//h3[.='CANCEL']//parent::button
+        Complete_Btn: xpath=//div[@class='btn_con']//h3[.='COMPLETE']//parent::button
+
+      PaymentSuccess_Popup:
+        Img: xpath=//div[@class='conform-done']//div//img[@src='/static/media/Done.138ce807f205eed06d2e.png']
+        Msg_lblTxt: xpath=//div[@class='conform-done']//div//p[text()='Your payment has been completed successfully']
+#        PrintReceipt_Btn: xpath=//button[text()='PRINT RECEIPT']   # Waiting to add this content
+        SendMail_Btn: xpath=//div[@class='Confirm_Print_mail']//div//h3[.='Send Mail']//parent::button
+        SendMsg_Btn: xpath=//div[@class='Confirm_Print_mail']//div//h3[.='Send Message']//parent::button
+        Done_Btn: xpath=//div[@class='Confirm_Print_mail']//div//h3[.='done']//parent::button
+
+ShoppingCart:
+  HeaderTxt: xpath=//div[@id='com_header']//h2[.='Shopping Cart']
+  Table: xpath=//div[@class='Overall_cart']//table
+  Multiple_Column: xpath=//div[@class='Overall_cart']//div//div/table/thead/tr/th
+  Sno_Column: xpath=//div[@class='Overall_cart']//div//div/table/thead/tr/th[1]
+  CartID_Column: xpath=//div[@class='Overall_cart']//div//div/table/thead/tr/th[2]
+  CustomerName_Column: xpath=//div[@class='Overall_cart']//div//div/table/thead/tr/th[3]
+  TotalQty_Column: xpath=//div[@class='Overall_cart']//div//div/table/thead/tr/th[4]
+  TotalAmt_Column: xpath=//div[@class='Overall_cart']//div//div/table/thead/tr/th[5]
+  Actions_Column: xpath=//div[@class='Overall_cart']//div//div/table/thead/tr/th[6]
+  MakeToOrder_Btns: xpath=//*[@id="Table"]/div/table/tbody/tr/td[6]/button/button
+  MakeToOrder_Btn: xpath=//td[text()='{value}']//parent::tr//td[6]//button//button
+
+  MakeToOrder_CartDetails:
+    Actions_ColTxt: xpath=//div[@id='Cartdisplay']//div//ul//li[.='Actions']
+    ProductName_ColTxt: xpath=//div[@id='Cartdisplay']//div//ul//li[.='Product Name']
+    Amount_ColTxt: xpath=//div[@id='Cartdisplay']//div//ul//li[.='Amount']
+    Amount_ColumnValue: xpath=//li[.='{value}']//parent::ul//li[3]
+    OrderQTY_ColTxt: xpath=//div[@id='Cartdisplay']//div//ul//li[.='Total Quantity']
+    Total_ColTxt: xpath=//div[@id='Cartdisplay']//div//ul//li[.='Total']
+    Total_ColumnValue: xpath=//li[.='{value}']//parent::ul//li[5]
+    Products_Rows: //*[@id='Cartdisplay']/div[1]/div/ul
+    OrderQTY_DecreaseBtn: xpath=//li[.='{value}']//parent::ul//li[4]//button[1]
+    OrderQTY_IncreaseBtn: xpath=//li[.='{value}']//parent::ul//li[4]//button[2]
+    OrderQTY_Value: xpath=//li[.='{value}']//parent::ul//li[4]//input
+    Actions_Btn: xpath=//li[.='{value}']//parent::ul//li[1]//*[@data-testid='TaskAltIcon']
+    Multiple_products: id=Cartdisplay_Products
+
+    CartDetails:
+      CartID: xpath=//*[@class='Cartid_delet']//parent::div//div[1]//h3
+      Cart_DeleteBtn: xpath=//*[@class='Cartid_delet']//parent::div//div[1]//button//*[@data-testid='DeleteIcon']
+
+      PriceDetails:
+        HeaderTxt: xpath=//*[@class='Order_details']//h3
+        Price_LblTxt: xpath=//*[@class='Order_details']//ul//li[1]//p[1]
+        Price_Value: xpath=//*[@class='Order_details']//ul//li[1]//p[2]
+        Discount_LblTxt: xpath=//*[@class='Order_details']//ul//li[3]//p[1]
+        Discount_Value: xpath=//*[@class='Order_details']//ul//li[3]//p[2]
+        DeliveryCharges_LblTxt: xpath=//*[@class='Order_details']//ul//li[4]//p[1]
+        DeliveryCharges_Value: xpath=//*[@class='Order_details']//ul//li[4]//p[2]
+        TotalPrice_LblTxt: xpath=//*[@class='Order_details']//div//h2[1]
+        TotalPrice_Value: xpath=//*[@class='Order_details']//div//h2[2]
+        Items_LblTxt: xpath=//*[@class='Order_details']//ul//li[2]//p[1]
+        Items_Value: xpath=//*[@class='Order_details']//ul//li[2]//p[2]
+
+      CustomerDetails:
+        HeaderTxt: xpath=(//*[@class='Customer_Details'])[1]//h3
+        Expand_Btn: xpath=//h3[.='Customer Detail']//parent::div//*[@focusable='false']
+        SelectCustomer_LblTxt: xpath=//*[@class='customer_selection']//div//h3
+        SelectCustomer_Btn: xpath=//*[@class='customer_selection']//div//button
+
+        SelectCustomer_Popup:
+          HeaderTxt: xpath=//div[@class='customer_selection_pop']//ul//h3
+          AddCustomer_Btn: xpath=//div[@class="customer_selection_pop"]//ul//div//div//button//h3[.='ADD CUSTOUMER']
+          Search_Txtbox: xpath=//div[.='Search Phone number']//input
+          Search_TxtBox_Placeholder: xpath=//label[.='Search Phone number']
+          Name_Column_LblTxt: xpath=//div[@class='customer_selection_pop']//ul[2]//li[.='Name']
+          PhoneNo_Column_LblTxt: xpath=//div[@class='customer_selection_pop']//ul[2]//li[.='Phone Number']
+          Selecting_Customer: xpath=//div[@class='customer_data']//ul//li[.='{value}']
+
+        Selected_Customer:
+          Name_LblTxt: xpath=//div[@id='customer_details_&_customer_sellection']//ul//li[1]//p[1]
+          Name_Value: xpath=//div[@id='customer_details_&_customer_sellection']//ul//li[1]//p[2]
+          PhoneNo_LblTxt: xpath=//div[@id='customer_details_&_customer_sellection']//ul//li[2]//p[1]
+          PhoneNo_Value: xpath=//div[@id='customer_details_&_customer_sellection']//ul//li[2]//p[2]
+
+      PaymentDetails:
+        headerTxt: xpath=//div[@class='Customer_Details']//h3[.='Payment']
+        Expand_Btn: xpath=//h3[.='Payment']//parent::div//*[@data-testid='KeyboardArrowUpIcon']
+        BuyOnCredit_lblTxt: xpath=//div[@id='mode_of_payment']//ul//li[1]//label
+        BuyOnCredit_chkBox: xpath=//div[@id='mode_of_payment']//ul//li[1]//input
+        CreditCard_lblTxt: xpath=//div[@id='mode_of_payment']//ul//li[2]//label
+        CreditCard_ChkBox: xpath=//div[@id='mode_of_payment']//ul//li[2]//input
+        Cash_lblTxt: xpath=//div[@id='mode_of_payment']//ul//li[3]//label
+        Cash_ChkBox: xpath=//div[@id='mode_of_payment']//ul//li[3]//input
+        Confirm_Btn: xpath=//div[@id='confirm_pay_button']//button
+
+Settings:
+  Clicked_Tab:  css=div.selected_Edit
+  Table:  xpath=//div[@id='Table']//table
+  TableColumn_Headers:  xpath=//div[@id='Table']//table//thead//tr//th
+  RowsPerPage_lblTxt:  xpath=//p[@id=':r1:']
+  RowsPerPage_DD:  xpath=//select[@id=':r0:']
+  RowsPerPage_DDArrow:  xpath=//div[@id='Table']//*[@aria-label='rows per page']
+  RowsPerPage_DDOptions:  xpath=//div[@id='Table']//*[@aria-label='rows per page']//option
+  RowsPerPage_DDOption:  xpath=//div[@id='Table']//*[@aria-label='rows per page']//option[text()='{value}']
+  ShowEntries: xpath=//*[@data-testid='ArrowDropDownIcon']//parent::div//following::p
+  Pagination_PreviousBtn: css=button[title='Go to previous page']
+  Pagination_NextBtn: xpath=//button[@title='Go to next page']//*[@data-testid='KeyboardArrowRightIcon']
+  Category_ColumnValue: xpath=//div[@id='Table']//table//tbody//tr//td[text()='{value}']
+  AllOption_RowsPerPage_DDValue: xpath=//*[@aria-label="rows per page"]/option[4]
+  Cancel_Btn: xpath=//h3[.='Cancel']//parent::button
+  Close_Icon: xpath=//button[contains(@class,'cancel-icon')]
+
+  Edit_popup:
+    Header_Text: xpath=//div[@class='edit-popupscreen']//h1[contains(.,'Edit')]
+    Cancel_Btn: xpath=//h3[.='Cancel']//parent::button
+
+  Delete_popup:
+    Header_Text: xpath=//div[@class='edit-popupscreen']//h1[contains(.,'Delete')]
+    Cancel_Btn: xpath=//h3[.='Cancel']//parent::button
+
+
+  Branches:
+    BranchesTab_Btn: xpath=//ul[@class='edit-menu']//*[.='Branches']
+    AddBranch_Btn: xpath=//div[@class='category-add']//button
+    Added_Branches_Section: xpath=//p[contains(.,'{value}')]//parent::li//parent::ul//parent::div/..
+    Added_Branch_Sec: xpath=(//div[@class='Branch_display']//div[contains(@class,'container_Location')])[value]
+    Actions_Btn: "//p[.=': {value}']//parent::li//parent::ul//parent::div/following::button"
+    Edit_action: xpath=//button//following::div//div[.='Edit']
+    Delete_action: xpath=//button//following::div//div[.='Delete']
+
+    Added_Branch_Section:
+      BranchName_LblTxt: xpath=//p[contains(.,'{value}')]//parent::div//parent::div//div//p[.='Branch Name ']
+      BranchName_Value: xpath=//p[contains(.,'{value}')]
+      Branch_OpeningDate_LblTxt: xpath=//p[contains(.,'{value}')]//parent::div//parent::div//div//p[.='Branch Opening Date ']
+      Branch_OpeningDate_Value: xpath=(//p[contains(.,'{value}')]//parent::div//p)[2]
+      ContactPersonName_LblTxt: xpath=//p[contains(.,'{value}')]//parent::div//parent::div//div//p[.='Contact Person Name']
+      ContactPersonName_Value: xpath=(//p[contains(.,'{value}')]//parent::div//p)[3]
+      ContactNumber_LblTxt: xpath=//p[contains(.,'{value}')]//parent::div//parent::div//div//p[.='Contact Number']
+      ContactNumber_Value: xpath=(//p[contains(.,'{value}')]//parent::div//p)[4]
+      Address_LblTxt: xpath=//p[contains(.,'{value}')]//parent::div//parent::div//div//p[.='Address ']
+      Address_Value: xpath=//p[contains(.,'{value}')]//parent::li//parent::ul//parent::div//ol
+
+    Add_Branch_Popup:
+      Header_LblTxt: xpath=//div[@id='location_popupscreen']//h2[.='Add branch']
+      BranchNameTxtBox_LblTxt: id=Branch-label
+      BranchName_TxtBox: id=Branch
+      BranchOpeningDate_LblTxt: id=opening_date-label
+      BranchOpeningDate_TxtBox: id=opening_date
+      Apartment_Address_LblTxt: id=address-label
+      Apartment_Address_TxtBox: id=address
+      StreetNameTxtBox_LblTxt: id=street-label
+      StreetName_TxtBox: xpath=//span[text()="Area /Street /Sector /Town"]//parent::label//following::div[1]//input
+      Dropdown_Options: xpath=//ul[@role='listbox']//li
+      CountryDD_LblTxt: xpath=//label//span[text()='Country']
+      Country_DD: xpath=//span[text()='Country']//parent::label//following::div[1]
+      Country_DDOpt: xpath=//ul[@role='listbox']//li[text()='{value}']
+      StateDD_LblTxt: xpath=//label//span[text()='State']
+      State_DD: xpath=//span[text()='State']//parent::label//following::div[1]
+      State_DDOpt: xpath=//ul[@role='listbox']//li[text()='{value}']
+      DistrictDD_LblTxt: xpath=//label//span[text()='City']
+      District_DD: xpath=//span[text()='City']//parent::label//following::div[1]
+      District_DDOpt: xpath=//ul[@role='listbox']//li[text()='{value}']
+      PinCodeTxtBox_LblTxt: id=pincode-label
+      PinCode_TxtBox: css=input#pincode
+      Cancel_Btn: xpath=//h3[.='cancel']//parent::button
+      Confirm_Btn: xpath=//h3[.='Confirm']//parent::button
+
+    Edit_Branch_Popup:
+      Header_LblTxt: xpath=//div[@class='edit-Branch_popupscreen']//h2[.='Edit Branch']
+      BranchTxtBox_LblTxt: id=Branch-label
+      Branch_TxtBox: xpath=//label[@id='Branch-label']//parent::div//div//input
+      Apartment_Address_LblTxt: id=address-label
+      Apartment_Address_TxtBox: id=address
+      StreetNameTxtBox_LblTxt: id=street-label
+      StreetName_TxtBox: id=street
+      CountryDD_LblTxt: id=country-label
+      Country_DDBox: id=country
+      StateDD_LblTxt: id=state-label
+      State_DDBox: id=state
+      DistrictDD_LblTxt: id=city-label
+      District_DDBox: id=city
+      PinCodeTxtBox_LblTxt: id=pincode-label
+      PinCode_TxtBox: id=pincode
+      PinCode_ErrMsg: id=pincode-helper-text
+      Cancel_Btn: xpath=//h3[.='Cancel']//parent::button
+      Update_Btn: xpath=//h3[.='update']//parent::button
+
+    Delete_Branch_Popup:
+      Header_LblTxt: xpath=//div[@role='dialog']//h2//h3[.='Delete branch']
+      Description_LblTxt: xpath=//div[@role='dialog']//div//p
+      Cancel_Btn: xpath=//div[@id='cancel_btn']//button
+      Confirm_Btn: xpath=//h3[.='Confirm']//parent::button
+
+  Users:
+    UsersTab_Btn: xpath=//ul[@class='edit-menu']//a[.='Users']
+    AddUser_Btn: css=#Addcategory>div>button
+    Table:  xpath=//div[@id='Table']//table
+    Table_header:  xpath=//div[@id='Table']//table//thead//tr//th[{value}]
+    Users_ColumnValue:  xpath=//div[@id='Table']//table//tbody//tr//td[2]//self::td[.='{value}']
+    WaitingForPassword_StatusIcon: xpath=//td[text()='{value}']//parent::tr//td[7]//button//*[@data-testid='NewReleasesIcon']
+    Active_StatusIcon: xpath=//td[text()='{value}']//parent::tr//td[7]//button//*[@data-testid='CheckCircleIcon']
+    Deleted_StatusIcon: xpath=//td[text()='{value}']//parent::tr//td[7]//button//*[@data-testid='DeleteOutlineIcon']
+    SelectedBranch_ColumnValue: xpath=//td[text()='{value}']//parent::tr//td[8]
+    Roles_ColumnValue: xpath=//td[text()='{value}']//parent::tr//td[9]
+    SelectBranch_Btn: xpath=//td[.='{value}']//parent::tr//td//button[@aria-label='Select Branch']
+    EditUser_Btn: xpath=//td[.='{value}']//parent::tr//td//button[@aria-label='Edit User']
+    DeleteUser_Btn: xpath=//td[.='{value}']//parent::tr//td//button[@aria-label='Delete User']
+
+    Add_User_Popup:
+      Header_LblTxt: xpath=//div[@class='edit-popupscreen']//h2[text()='Add user']
+      Name_TxtBox_LblTxt: id=Name-label
+      Name_TxtBox: id=Name
+      PhoneNo_TxtBox_LblTXt: id=Phoneno-label
+      PhoneNo_TxtBox: id=Phoneno
+      EmailId_TxtBox_LblTxt: id=Email-label
+      EmailId_TxtBox: id=Email
+      DOB_TxtBox_LblTxt: id=DOB-label
+      DOB_TxtBox: id=DOB
+      Address_TxtBox_LblTxt: id=Address-label
+      Address_TxtBox: id=Address
+      Cancel_Btn: css=div#btn_confirm_edit>div#cancel_btn>div>button
+      Confirm_Btn: css=div#btn_confirm_edit>div:nth-child(2)>div>button
+
+    Select_Branch_Popup:
+      HeaderTxt: xpath=//div[@class='edit-popupscreen']//h1[text()='Select Branch']
+      Role_LblTxt: xpath=//div[@class='Role_select']//p[1]
+      Role_RequiredSymbol: xpath=//div[@class='Role_select']//p[2]
+      Admin_Role_LblTxt: xpath=(//p[.='Role']//parent::div//following-sibling::label[1]//span)[3]
+      Admin_Role_ChkBox: id=Admin_checkbox
+      Employee_Role_LblTxt: xpath=(//p[.='Role']//parent::div//following-sibling::label[2]//span)[3]
+      Employee_Role_ChkBox: id=Emp_checkbox
+      SelectBranch_DDBox: xpath=//option[.='Select branch']//parent::select
+      SelectBranch_DDOption: xpath=//select[@id='demo-customized-select-native']//option[.='{value}']
+      SelectBranchDD_LblTxt: xpath=//select[@id='demo-customized-select-native']//option[1]
+      Address_LblTxt: xpath=//div[@class='Address-name']//p[.='Address:']
+      Address_TxtBox: xpath=//div[@class='Address-textbox']
+      Address_TxtBox_Content: xpath=//div[@class='Address-textbox']//p//ul//li
+      Cancel_Btn: xpath=//div[@class='rolebutton']//div[1]//div//button
+      Confirm_Btn: xpath=//div[@class='rolebutton']//div[2]//div//button
+      Close_Icon: css=button.cancel-icon-SelectBranch
+
+    Edit_User_Popup:
+      HeaderTxt: xpath=//div[@class='Edit_header']//h2[.='Edit user']
+      Name_TextBox_LblTxt: xpath=//div[@class='edit_textfield']//label[.='Name']
+      Name_TxtBox: xpath=//label[.='Name']//parent::div//div//input
+      PhoneNo_TxtBox_LblTxt: xpath=//div[@class='edit_textfield']//label[.='Phone number']
+      PhoneNo_TxtBox: xpath=//label[.='Phone number']//parent::div//div//input
+      DateOfJoining_LblTxt: xpath=//div[@class='edit_textfield']//label[.='Date of joining']
+      DateOfJoining_TxtBox: xpath=//div[@class='edit_textfield']//label[.='Date of joining']//parent::div//div//input
+      Address_LblTxt: xpath=//div[@class='edit_textfield']//label[.='Address']
+      Address_TxtBox: xpath=//div[@class='edit_textfield']//label[.='Address']//parent::div//div//input
+      Cancel_Btn: xpath=//h3[.='Cancel']//parent::button
+      Update_Btn: xpath=//h3[.='update']//parent::button
+      Close_Icon: css=button.cancel-icon-Edituser
+
+    Edit_Branch_Popup:
+      Role_LblTxt: xpath=//div[@class='Role_option']//h3//div//p[1]
+      Role_RequiredSymbol: xpath=//div[@class='Role_option']//h3//div//p[2]
+      Admin_Role_LblTxt: xpath=//div[@class='Role_option']//h3//label[1]//div
+      Admin_Role_ChkBox: xpath=(//input[@type='checkbox'])[1]
+      Employee_Role_LblTxt: xpath=//div[@class='Role_option']//h3//label[2]//div
+      Employee_Role_ChkBox: xpath=(//input[@type='checkbox'])[2]
+      Cancel_Btn: xpath=//h3[.='Cancel']//parent::button
+      Update_Btn: xpath=//h3[.='update']//parent::button
+      Close_Icon: css=button.cancel-icon-Edituser
+
+  Categories:
+    Categories_TabBtn:  xpath=//div[@class='Edit-overall']//ul//*[.='Categories']
+    AddCategory_Btn: xpath=//div[@id='Addcategory']//button
+    Table_header:  xpath=//div[@id='Table']//table//thead//tr//th[{value}]
+    Categories_ColumnValue:  xpath=//div[@id='Table']//table//tbody//tr//td[2]//self::td[.='{value}']
+    Table_EditBtn: xpath=//*[contains(text(),'{value}')]//parent::tr//td[4]//button//*[@data-testid='EditIcon']
+    Table_DeleteBtn: xpath=//*[contains(text(),'{value}')]//parent::tr//td[4]//button//*[@data-testid='DeleteOutlineIcon']
+
+    AddCategory_PopUp:
+      HeaderTxt: xpath=//div[@class='addcategory-editadd']//h2
+      CategoryTxtBox_PlaceHolder:  css=label#Category_Name-label>span
+      Category_TxtBox:  css=input#Category_Name
+      Cancel_Btn: xpath=//button[.='Cancel']
+      Confirm_Btn: xpath=//button[.='Confirm']
+      CloseIcon: css=button.cancel-icon-Addcategory
+
+    EditCategory_Popup:
+      HeaderTxt: xpath=//div[@class='addcategory-editadd']//h2[.='Edit category']
+      CategoryTxtBox_PlaceHolder:  xpath=//div[@class='addcategory-editadd']//div//label[.='Category name*']
+      Category_TxtBox:  xpath=//div[@class='addcategory-editadd']//div//input
+      Cancel_Btn: xpath=//button[.='Cancel']
+      Update_Btn: xpath=//h3[.='update']//parent::button
+      Close_Icon: css=button.cancel-icon-Editcategory
+
+    DeleteCategory_Popup:
+      HeaderTxt: xpath=//div[contains(@class,'addcategory-edit')]//h1
+      Delete_CategoryName: xpath=//div[contains(@class,'addcategory-edit')]//p[1]
+      Description_LblText: xpath=//div[contains(@class,'addcategory-edit')]//p[2]
+      Note_LblText: xpath=//div[contains(@class,'addcategory-edit')]//p[3]
+      Cancel_Btn: xpath=//button[.='Cancel']
+      Confirm_Btn: xpath=//button[.='Confirm']
+
+  Products:
+    Products_TabBtn: xpath=//ul[@class='edit-menu']//a[.='Products']
+    Table_header:  xpath=//div[@id='Table']//table//thead//tr//th[{value}]
+    ProductName_ColumnValue:  xpath=//div[@id='Table']//table//tbody//tr//td[2]//self::td[.='{value}']
+    AddProduct_Btn: xpath=//button//h3[text()='Add Product']
+    Table_EditBtn: xpath=//*[text()='{value}']//parent::tr//td//button//*[@data-testid='EditIcon']
+    Table_DeleteBtn: xpath=//*[text()='{value}']//parent::tr//td//button//*[@data-testid='DeleteOutlineIcon']
+
+    AddProduct_PopUp:
+      HeaderTxt: xpath=//div[@class='addcategory-edit-p']//h2
+      ProductNameTxtBox_PlaceHolder: xpath=//div[@class='edit_productsty']//div[1]//label
+      ProductName_TxtBox: xpath=//div[@class='edit_productsty']/form/div[1]/div/input
+      ArabicName_TxtBox_Placeholder: xpath=//div[@class='edit_productsty']//div[2]//label
+      ArabicName_TxtBox: xpath=//span[text()='Arabic name']//parent::label//following-sibling::div//input
+      ProductAmountTxtBox_PlaceHolder: xpath=//div[@class='edit_productsty']//div[3]//label
+      ProductAmount_TxtBox: xpath=//div[@class='edit_productsty']/form/div[3]/div/input
+      SelectCategory_BtnTxt: xpath=//div[@class='edit_productsty']/form/div[4]//label
+      SelectCategory_DDBtn: id=demo-customized-select-native
+      SelectCategory_DDOptions: xpath=//div[@class='edit_productsty']//form//div//div//*[@id='demo-customized-select-native']//option
+      SelectCategory_DDOption: xpath=//div[@class='edit_productsty']//form//div//div//*[@id='demo-customized-select-native']//option[.='{value}']
+      Cancel_Btn: xpath=//button[.='Cancel']
+      Confirm_Btn: xpath=//button[.='Confirm']
+
+    EditProduct_Popup:
+      HeaderTxt: xpath=//div[@class='modal-contenters']//div//h2[.='Edit product list']
+      ProductNameTxtBox_PlaceHolder: xpath=//div[@class='edit-popupscreens']//div//form//div[1]//label
+      ProductAmountTxtBox_PlaceHolder: xpath=//div[@class='edit-popupscreens']//div//form//div[2]//label
+      ProductName_TxtBox: xpath=//div[@class='edit-popupscreens']//div//form//div[1]//input
+      ProductAmount_TxtBox: xpath=//div[@class='edit-popupscreens']//div//form//div[2]//input
+      SelectCategory_BtnTxt: xpath=//select[@id='SelectCategory']//parent::div//parent::div//label
+      SelectCategory_DDBtn: xpath=//select[@id='SelectCategory']
+      Update_Btn: xpath=//h3[.='update']//parent::button
+      Cancel_Btn: xpath=//button[.='Cancel']
+      Close_Icon: css=button.cancel-icon-EditProduct
+
+    DeleteProduct_Popup:
+      HeaderTxt: xpath=//div[@class='addcategory-edit-product']//h1
+      Delete_ProductName: xpath=//div[@class='addcategory-edit-product']//p[1]
+      Description_LblTxt: xpath=//div[@class='addcategory-edit-product']//p[2]
+      Cancel_Btn: xpath=//button[.='Cancel']
+      Confirm_Btn: xpath=//button[.='Confirm']
+
+  Customer:
+    Customer_TabBtn: xpath=//ul[@class='edit-menu']//*[.='Customers']
+    Search_PhoneNo_TxtBox: xpath=//input[@id='Search-Phone-number']
+    SearchPhoneNo_TxtBoxPlaceHolder: id=Search-Phone-number-label
+    Table_ColumnHeader_Txts: xpath=//div[@class='customer_Table']//table//thead//tr//th[{value}]
+    Searched_PhoneNo: xpath=//div[@class='customer_Table']//table//tbody//tr//td//self::td[text()='{value}']
+    SearchedCustomer_EditBtn: xpath=//td[text()='{value}']//parent::tr//button[@aria-label='Edit']
+    SearchedCustomer_DeleteBtn: xpath=//td[text()='{value}']//parent::tr//button[@aria-label='Delete']
+
+    EditCustomer_popup:
+      HeaderTxt: css=h1.Edit_page_Name
+      NameTxtbox_LblTxt: id=Name-label
+      Name_Txtbox: id=Name
+      PhNoTxtbox_LblTxt: id=phoneno-label
+      PhNo_Txtbox: id=phoneno
+      EmailTxtbox_LblTxt: id=Email-label
+      Email_Txtbox: id=Email
+      AddressTxtbox_LblTxt: "//ul[@class='address-optional']//p[.='Address (Optional):']"
+      Address_Txtbox:
+        StreetTxtBox_LblTxt: xpath=//label[.='Street/Village']
+        Street_TxtBox: xpath=//label[.='Street/Village']//parent::div//div//input
+        DistrictTxtBox_LblTxt: xpath=//label[.='District/State']
+        District_TxtBox: xpath=//label[.='District/State']//parent::div//div//input
+        PinCodeTxtBox_LblTxt: xpath=//label[.='Pincode/Zipcode']
+        PinCode_TxtBox: xpath=//label[.='Pincode/Zipcode']//parent::div//div//input
+      Cancel_Btn: xpath=//button[.='Cancel']
+      Update_Btn: xpath=//div[@id='cancel_btn']//parent::div//div[2]//button
+      Close_Icon: css=button.cancel-icon-Editcustomer
+
+    DeleteCustomer_popup:
+      HeaderTxt: css=div.edit-popupscreen>div>h1
+      Delete_CustomerName: css=div.addcategory-edit-product>p:nth-child(2)
+      Description_lblTxt: xpath=//div[@class='addcategory-edit-product']//p[text()='Are you sure you want to delete this customer?']
+      Cancel_Btn: xpath=//button[.='Cancel']
+      Confirm_Btn: xpath=//button[.='confirm']
